@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styleSheets/LoginStyleSheet/LoginStyle.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <title>User Login</title>
+</head>
+
+<body>
+  <header class="header">
+    <!-- Navigation Bar -->
+    <nav>
+      <div><img src="../Images/LoginImg/moodle.png" alt="Moodle Logo" style="float: left;"></div>
+      <div class="home"><a href="HomePage.html">Home</a></div>
+      <!-- <div class="news"><a href="#">News</a></div> -->
+      <div class="courses"><a href="#">Courses</a></div>
+      <div class="certifications"><a href="#">Certifications</a></div>
+    </nav>
+  </header>
+
+  <!-- Left Side Illustration -->
+  <div class="people-clipart-digital-collage-2-1">
+    <img src="../Images/LoginImg/people.png" alt="People Illustration">
+  </div>
+
+  <!-- Login Section -->
+  <div class="form-container">
+    <h2 style="font-family: PlusJakartaSans-ExtraBold, sans-serif; font-weight: 50;">Log Into Your Account</h2>
+    <form id="loginForm" action="javascript:void(0);" onsubmit="loginRedirect()">
+      <input type="text" class="input-field" placeholder="Enter Username" name="username" required>
+      <input type="password" class="input-field" placeholder="Enter Password" name="password" required>
+      <button type="submit" class="button">Sign In</button>
+      <div><br /></div>
+      <a href="#" style="font-family: PlusJakartaSans-ExtraBold, sans-serif;">Forgot your password?</a>
+      <div><br /></div>
+    </form>
+
+    <script>
+      function loginRedirect() {
+        // Redirect to welcome page after login
+        window.location.href = "WelcomePage.html";
+      }
+    </script>
+  </div>
+
+</body>
+
+</html>
